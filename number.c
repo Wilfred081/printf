@@ -1,7 +1,6 @@
 #include "main.h"
 
 /**
-
  * convert - converter function, a clone of itoa
  * @num: number
  * @base: base
@@ -11,6 +10,7 @@
  * Return: string
  */
 char *convert(long int num, int base, int flags, params_t *params)
+
 {
 static char *array;
 static char buffer[50];
