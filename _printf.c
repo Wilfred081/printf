@@ -11,10 +11,10 @@ int _printf(const char *format, ...)
 int sum = 0;
 va_list ap;
 char *p, *start;
+
 params_t params = PARAMS_INIT;
 
 va_start(ap, format);
-
 if (!format || (format[0] == '%' && !format[1]))
 return (-1);
 if (format[0] == '%' && format[1] == ' ' && !format[2])
@@ -29,7 +29,7 @@ continue;
 }
 start = p;
 p++;
-while (get_flag(p, &params)) /* while char at p is flag char */	
+while (get_flag(p, &params)) /* while char at p is flag char */
 {
 p++; /* next char */
 }
