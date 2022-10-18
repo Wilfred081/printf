@@ -21,7 +21,7 @@
 
 /**
  * struct parameters - parameters struct
- * 
+ *
  * @unsign: flag if unsigned value
  *
  * @plus_flag: on if plus_flag specified
